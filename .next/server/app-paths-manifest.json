@@ -1,10 +1,16 @@
 {
-  "/(default)/page": "app/(default)/page.js",
-  "/(default)/customers/page": "app/(default)/customers/page.js",
-  "/(default)/blog/page": "app/(default)/blog/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/api/hello/route": "app/api/hello/route.js",
+  "/(default)/blog/[slug]/page": "app/(default)/blog/[slug]/page.js",
   "/(default)/documentation/page": "app/(default)/documentation/page.js",
-  "/(default)/documentation/[slug]/page": "app/(default)/documentation/[slug]/page.js",
-  "/(default)/pricing/page": "app/(default)/pricing/page.js",
+  "/(default)/page": "app/(default)/page.js",
+  "/(auth)/reset-password/page": "app/(auth)/reset-password/page.js",
   "/(auth)/signin/page": "app/(auth)/signin/page.js",
+  "/(default)/customers/page": "app/(default)/customers/page.js",
+  "/(default)/pricing/page": "app/(default)/pricing/page.js",
+  "/(default)/support/page": "app/(default)/support/page.js",
+  "/(default)/blog/page": "app/(default)/blog/page.js",
+  "/(auth)/signup/page": "app/(auth)/signup/page.js",
+  "/(default)/documentation/[slug]/page": "app/(default)/documentation/[slug]/page.js",
   "/(default)/apps/page": "app/(default)/apps/page.js"
 }
