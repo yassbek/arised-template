@@ -19,10 +19,10 @@ export default function Header() {
             <ul className="flex grow flex-wrap items-center justify-center gap-4 text-sm lg:gap-8">
               <li className="px-3 py-1">
                 <Link
-                  href="/pricing"
+                  href="/princing"
                   className="flex items-center text-gray-700 transition hover:text-gray-900"
                 >
-                  Pricing
+                  Home
                 </Link>
               </li>
               <li className="px-3 py-1">
@@ -30,7 +30,7 @@ export default function Header() {
                   href="/customers"
                   className="flex items-center text-gray-700 transition hover:text-gray-900"
                 >
-                  Customers
+                  Contact
                 </Link>
               </li>
               <li className="px-3 py-1">
@@ -46,18 +46,18 @@ export default function Header() {
                   href="/documentation"
                   className="flex items-center text-gray-700 transition hover:text-gray-900"
                 >
-                  Docs
+                  Technology
                 </Link>
               </li>
               {/* 1st level: hover */}
-              <Dropdown title="Extra">
+              <Dropdown title="Solutions">
                 {/* 2nd level: hover */}
                 <li>
                   <Link
                     href="/support"
                     className="flex rounded-lg px-2 py-1.5 text-sm text-gray-700 hover:bg-gray-100"
                   >
-                    Support center
+                    How it works
                   </Link>
                 </li>
                 <li>
@@ -65,7 +65,7 @@ export default function Header() {
                     href="/apps"
                     className="flex rounded-lg px-2 py-1.5 text-sm text-gray-700 hover:bg-gray-100"
                   >
-                    Apps
+                    Use Cases
                   </Link>
                 </li>
               </Dropdown>
