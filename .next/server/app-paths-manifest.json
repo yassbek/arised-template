@@ -1,10 +1,3 @@
 {
-  "/(default)/page": "app/(default)/page.js",
-  "/(default)/customers/page": "app/(default)/customers/page.js",
-  "/(default)/blog/page": "app/(default)/blog/page.js",
-  "/(default)/documentation/page": "app/(default)/documentation/page.js",
-  "/(default)/documentation/[slug]/page": "app/(default)/documentation/[slug]/page.js",
-  "/(default)/pricing/page": "app/(default)/pricing/page.js",
-  "/(auth)/signin/page": "app/(auth)/signin/page.js",
-  "/(default)/apps/page": "app/(default)/apps/page.js"
+  "/(default)/page": "app/(default)/page.js"
 }
