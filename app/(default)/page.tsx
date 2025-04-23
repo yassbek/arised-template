@@ -11,19 +11,19 @@ import Features from "@/components/features-home";
 import TestimonialsCarousel from "@/components/testimonials-carousel";
 import LandingPage from "@/components/landingpagethree";
 import Cta from "@/components/cta";
+import HeroSection from "@/components/herosection";
 
 export default function Home() {
   return (
     <>
       <LandingPage />
-    
       <Hero />
-      <BusinessCategories />
-      <LargeTestimonial />
-      <FeaturesPlanet />
-      <Features />
       <TestimonialsCarousel />
       <Cta />
+
+      
+    
+      
     </>
   );
 }
