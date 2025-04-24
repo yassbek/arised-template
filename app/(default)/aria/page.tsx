@@ -26,7 +26,7 @@ export default function Customers() {
       <Cta
         heading="Automize your workflows with ArIA"
         buttonText="Get a Quote"
-        buttonLink="#0"
+        buttonLink="/contact"
       />
     </>
   );

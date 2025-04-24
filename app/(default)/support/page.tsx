@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Support - Simple",
+  title: "Support - Arised",
   description: "Page description",
 };
 
@@ -16,7 +16,7 @@ export default function Support() {
         className="overflow-hidden"
         heading="Cannot find what you're looking for?"
         buttonText="Contact Us"
-        buttonLink="#0"
+        buttonLink="/contact"
       />
     </>
   );

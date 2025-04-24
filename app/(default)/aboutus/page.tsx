@@ -1,5 +1,5 @@
 export const metadata = {
-    title: "Home - Simple",
+    title: "About Us - Arised",
     description: "Page description",
   };
   
@@ -7,7 +7,6 @@ export const metadata = {
   import Cta from "@/components/cta-alternative";
   import EcosystemSection from "@/components/arised_ecosystem";
   import ValuesSection from "@/components/values";
-  import AppList from "@/components/app-list";
   import OurStory from "@/components/our_story";
   
   export default function Home() {
@@ -20,12 +19,8 @@ export const metadata = {
         <Cta
             heading="Let's build something human together!"
             buttonText="Get a Quote"
-            buttonLink="#0"
-        />
-  
-        
-      
-        
+            buttonLink="/contact"
+        />      
       </>
     );
   }

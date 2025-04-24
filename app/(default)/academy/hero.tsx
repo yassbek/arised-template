@@ -31,7 +31,7 @@ export default function AcademyHeroSection() {
                   </span>
                 </a>
                 <a
-                  href="#contact"
+                  href="/contact"
                   className="btn w-full border border-blue-600 text-blue-600 hover:bg-blue-50 transition sm:w-auto"
                 >
                   Talk to a Training Expert

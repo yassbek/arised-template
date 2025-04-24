@@ -3,87 +3,89 @@ import Accordion from "@/components/accordion";
 export default function Faqs() {
   const faqs01 = [
     {
-      question: "Getting started with Simple",
+      question: "What is ArIA and how does it work?",
       answer:
-        "Simple is designed to be user-friendly and intuitive, while Complex is more robust and feature-rich. Both tools are great for creating websites, but Simple is ideal for beginners and small businesses, while Complex is better suited for larger organizations and developers.",
+        "ArIA is our intelligent automation agent that visually integrates with your legacy software — no APIs or code changes required. It observes workflows, learns user behavior, and automates repetitive tasks intelligently.",
     },
     {
-      question: "Promotional and free plan trials",
+      question: "What is Arised Academy?",
       answer:
-        "Yes, but you'll still pay the remainder of the term for the plan you signed up for.",
+        "Arised Academy is a conversational training platform. It simulates realistic dialogue scenarios to train your team in customer service, sales, HR, and more — powered by LLMs.",
     },
     {
-      question: "I'm unable to verify my account",
+      question: "How do I start a project with Arised?",
       answer:
-        "Yes, but you'll still pay the remainder of the term for the plan you signed up for.",
+        "It usually begins with a short workshop to map out your use case. After that, we build a pilot solution, which we refine and scale collaboratively.",
     },
     {
-      question: "Copyright (DMCA) Takedown Notice",
+      question: "Is setup complicated?",
       answer:
-        "Support is available 24/7 via email, chat, and phone. We're here to help you with any questions or concerns you may have.",
+        "Not at all. ArIA is plug-and-play with your existing software, and Academy runs in any browser. No installation, no tech headaches.",
     },
     {
-      question: "How to report an unrecognized charge",
+      question: "Do you offer live demos?",
       answer:
-        "Yes! You can invite clients or coworkers to collaborate on your projects, and they can upload their own content.",
+        "Yes! Reach out through our contact form and we’ll schedule a personalized walkthrough of either platform.",
     },
   ];
 
   const faqs02 = [
     {
-      question: "Change with my paid plan",
+      question: "What plans are available?",
       answer:
-        "Simple is designed to be user-friendly and intuitive, while Complex is more robust and feature-rich. Both tools are great for creating websites, but Simple is ideal for beginners and small businesses, while Complex is better suited for larger organizations and developers.",
+        "We offer modular pricing depending on your needs — from starter pilots to enterprise-scale automation and training. Academy also offers a per-seat or per-module model.",
     },
     {
-      question: "Cancel my subscription",
+      question: "Can we customize our training content?",
       answer:
-        "Yes, but you'll still pay the remainder of the term for the plan you signed up for.",
+        "Absolutely. You can start with ready-made scenarios, or have us build custom dialog flows tailored to your team, brand voice, and use cases.",
     },
     {
-      question: "I am unable to edit my profile",
+      question: "What kind of support does Arised provide?",
       answer:
-        "Yes, but you'll still pay the remainder of the term for the plan you signed up for.",
+        "We offer guided onboarding, real-time monitoring tools, and ongoing support through Slack, email, or direct calls — depending on your plan.",
     },
     {
-      question: "How to delete my account",
+      question: "Do you offer discounts for nonprofits or schools?",
       answer:
-        "Support is available 24/7 via email, chat, and phone. We're here to help you with any questions or concerns you may have.",
+        "Yes — especially for education-focused partners using Project Noor or Arised Academy. Reach out for a tailored quote.",
     },
     {
-      question: "How to reach customer support",
+      question: "Can we switch or upgrade plans later?",
       answer:
-        "Yes! You can invite clients or coworkers to collaborate on your projects, and they can upload their own content.",
+        "Yes, our plans are designed to scale with you. You can upgrade, expand usage, or add features as your needs evolve.",
     },
   ];
+  
 
   const faqs03 = [
     {
-      question: "How to change my password",
+      question: "Can multiple users access the platform?",
       answer:
-        "Simple is designed to be user-friendly and intuitive, while Complex is more robust and feature-rich. Both tools are great for creating websites, but Simple is ideal for beginners and small businesses, while Complex is better suited for larger organizations and developers.",
+        "Yes. You can invite collaborators, assign roles, and track performance across users — whether in ArIA or Academy.",
     },
     {
-      question: "How to change my email address",
+      question: "Can I manage training roles or permissions?",
       answer:
-        "Yes, but you'll still pay the remainder of the term for the plan you signed up for.",
+        "Yes. In Academy, you can control access per scenario or module, and assign training tasks to specific roles or departments.",
     },
     {
-      question: "How to change my username",
+      question: "How secure is my data?",
       answer:
-        "Yes, but you'll still pay the remainder of the term for the plan you signed up for.",
+        "We follow strict GDPR-compliant standards, offer secure hosting, and provide optional on-premise deployments for high-security clients.",
     },
     {
-      question: "How to change my billing information",
+      question: "Can I integrate ArIA with my internal systems?",
       answer:
-        "Support is available 24/7 via email, chat, and phone. We're here to help you with any questions or concerns you may have.",
+        "Yes — visually via the UI. ArIA doesn't require APIs, but we can also add logic hooks or hybrid connections if needed.",
     },
     {
-      question: "How to change my notification settings",
+      question: "Can I brand the Academy for internal use?",
       answer:
-        "Yes! You can invite clients or coworkers to collaborate on your projects, and they can upload their own content.",
+        "Yes, we offer white-labeling options, so your teams feel like they're using your own internal platform — not a third-party tool.",
     },
   ];
+  
 
   return (
     <section>
@@ -107,7 +109,7 @@ export default function Faqs() {
             </div>
             {/* Profile & plans */}
             <div>
-              <h2 className="mb-5 text-xl font-bold">Profile & plans</h2>
+              <h2 className="mb-5 text-xl font-bold">Plans, Pricing & Support</h2>
               <div className="space-y-2">
                 {faqs02.map((faq, index) => (
                   <Accordion
@@ -122,7 +124,7 @@ export default function Faqs() {
             </div>
             {/* Accounts */}
             <div>
-              <h2 className="mb-5 text-xl font-bold">Accounts</h2>
+              <h2 className="mb-5 text-xl font-bold">Using the Platform</h2>
               <div className="space-y-2">
                 {faqs03.map((faq, index) => (
                   <Accordion

@@ -3,9 +3,7 @@
 
 import { useRef } from "react";
 import Hero from "./hero";
-import AppList from "@/components/app-list";
 import Cta from "@/components/cta-alternative";
-import Header from "@/components/ui/header";
 import WhatItDoesSection from "@/components/what_it_does_academy";
 import WhoItsForSection from "@/components/who_its_for_academy";
 import HowItWorksSection from "@/components/how-it-works-academy";
@@ -35,7 +33,7 @@ export default function Apps() {
       <Cta
         heading="Create your next project with Arised"
         buttonText="Get a Quote"
-        buttonLink="#0"
+        buttonLink="/contact"
       />
     </>
   );
