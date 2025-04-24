@@ -1,5 +1,6 @@
 "use client";
 
+
 import { useRef } from "react";
 import Hero from "./hero";
 import AppList from "@/components/app-list";
@@ -21,7 +22,7 @@ export default function Apps() {
 
   return (
     <>
-      <Header />
+      
       <Hero />
       <WhatItDoesSection />
       <WhoItsForSection />

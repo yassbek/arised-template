@@ -16,8 +16,8 @@ import HeroSection from "@/components/herosection";
 export default function Home() {
   return (
     <>
-      <LandingPage />
       <Hero />
+      <LandingPage />
       <TestimonialsCarousel />
       <Cta />
 

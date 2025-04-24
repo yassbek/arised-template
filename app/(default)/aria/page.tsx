@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Customers - Simple",
+  title: "ArIA- Arised",
   description: "Page description",
 };
 
@@ -15,7 +15,7 @@ import WhoItsForSection from "@/components/who_its_for_aria";
 export default function Customers() {
   return (
     <>
-      <Header />
+      
       <Hero />
       <FeaturesAria />
       <UseCaseSection />

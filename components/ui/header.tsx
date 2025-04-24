@@ -50,14 +50,14 @@ export default function Header() {
                 </Link>
                 </li>
                 {/* 1st level: hover */}
-                <Dropdown title="Solutions">
+                <Dropdown title="Arised">
                   {/* 2nd level: hover */}
                   <li>
                   <Link
-                    href="/support"
+                    href="/aboutus"
                     className="flex rounded-lg px-2 py-1.5 text-sm text-gray-700 hover:bg-gray-100"
                   >
-                    How it works
+                    About Us
                   </Link>
                 </li>
                 <li>
@@ -65,7 +65,15 @@ export default function Header() {
                     href="/apps"
                     className="flex rounded-lg px-2 py-1.5 text-sm text-gray-700 hover:bg-gray-100"
                   >
-                    Use Cases
+                    Contact
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/support"
+                    className="flex rounded-lg px-2 py-1.5 text-sm text-gray-700 hover:bg-gray-100"
+                  >
+                    Support
                   </Link>
                 </li>
               </Dropdown>
