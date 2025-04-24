@@ -120,70 +120,70 @@ export default function PartnersCarousel() {
                 <div className="w-32 h-32 relative">
                   <Image src={PartnerLogo01} alt="Acme Corp" fill className="object-contain" />
                 </div>
-                <span className="mt-4 text-lg font-medium text-gray-900">Acme Corp</span>
+                <span className="mt-4 text-lg font-medium text-gray-900">Malteser</span>
               </div>
               {/* Partner 2 Duplicate */}
               <div className="w-[22rem] transition-transform duration-300 flex flex-col items-center">
                 <div className="w-32 h-32 relative">
                   <Image src={PartnerLogo02} alt="Orbit Tech" fill className="object-contain" />
                 </div>
-                <span className="mt-4 text-lg font-medium text-gray-900">Orbit Tech</span>
+                <span className="mt-4 text-lg font-medium text-gray-900">Ministry of Education Sierra Leone</span>
               </div>
               {/* Partner 3 Duplicate */}
               <div className="w-[22rem] transition-transform duration-300 flex flex-col items-center">
                 <div className="w-32 h-32 relative">
                   <Image src={PartnerLogo03} alt="Solaris Solutions" fill className="object-contain" />
                 </div>
-                <span className="mt-4 text-lg font-medium text-gray-900">Solaris Solutions</span>
+                <span className="mt-4 text-lg font-medium text-gray-900">Toolkit Fundation</span>
               </div>
               {/* Partner 4 Duplicate */}
               <div className="w-[22rem] transition-transform duration-300 flex flex-col items-center">
                 <div className="w-32 h-32 relative">
                   <Image src={PartnerLogo04} alt="Nexus Partners" fill className="object-contain" />
                 </div>
-                <span className="mt-4 text-lg font-medium text-gray-900">Nexus Partners</span>
+                <span className="mt-4 text-lg font-medium text-gray-900">Moroccan Embassy in Addis Ababa</span>
               </div>
               {/* Partner 5 Duplicate */}
               <div className="w-[22rem] transition-transform duration-300 flex flex-col items-center">
                 <div className="w-32 h-32 relative">
                   <Image src={PartnerLogo05} alt="Arised" fill className="object-contain" />
                 </div>
-                <span className="mt-4 text-lg font-medium text-gray-900">Arised</span>
+                <span className="mt-4 text-lg font-medium text-gray-900">Red Cross</span>
               </div>
               {/* Partner 6 Duplicate */}
               <div className="w-[22rem] transition-transform duration-300 flex flex-col items-center">
                 <div className="w-32 h-32 relative">
                   <Image src={PartnerLogo06} alt="Arised" fill className="object-contain" />
                 </div>
-                <span className="mt-4 text-lg font-medium text-gray-900">Arised</span>
+                <span className="mt-4 text-lg font-medium text-gray-900">eutelsat</span>
               </div>
               {/* Partner 7 Duplicate */}
               <div className="w-[22rem] transition-transform duration-300 flex flex-col items-center">
                 <div className="w-32 h-32 relative">
                   <Image src={PartnerLogo07} alt="Arised" fill className="object-contain" />
                 </div>
-                <span className="mt-4 text-lg font-medium text-gray-900">Arised</span>
+                <span className="mt-4 text-lg font-medium text-gray-900">Inverto</span>
               </div>
               {/* Partner 8 Duplicate */}
               <div className="w-[22rem] transition-transform duration-300 flex flex-col items-center">
                 <div className="w-32 h-32 relative">
                   <Image src={PartnerLogo08} alt="Arised" fill className="object-contain" />
                 </div>
-                <span className="mt-4 text-lg font-medium text-gray-900">Arised</span>
+                <span className="mt-4 text-lg font-medium text-gray-900">Cedus</span>
               </div>
               {/* Partner 9 Duplicate */}
               <div className="w-[22rem] transition-transform duration-300 flex flex-col items-center">
                 <div className="w-32 h-32 relative">
                   <Image src={PartnerLogo09} alt="Arised" fill className="object-contain" />
                 </div>
-                <span className="mt-4 text-lg font-medium text-gray-900">Arised</span>
+                <span className="mt-4 text-lg font-medium text-gray-900">African Union</span>
               </div>
               {/* Partner 10 Duplicate */}
               <div className="w-[22rem] transition-transform duration-300 flex flex-col items-center">
                 <div className="w-32 h-32 relative">
                   <Image src={PartnerLogo10} alt="Arised" fill className="object-contain" />
                 </div>
-                <span className="mt-4 text-lg font-medium text-gray-900">Arised</span>
+                <span className="mt-4 text-lg font-medium text-gray-900">k67</span>
               </div>
             </div>
           </div>

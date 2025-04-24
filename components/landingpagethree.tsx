@@ -53,6 +53,8 @@ const LandingPage: React.FC = () => {
               router.push("/aria");
             } else if (panel === "right") {
               window.location.href = "https://www.project-noor.eu";
+            } else if (panel === "middle") {
+              router.push("/academy");
             }
           }}
         >
