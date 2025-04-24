@@ -19,40 +19,40 @@ export default function Header() {
             <ul className="flex grow flex-wrap items-center justify-center gap-4 text-sm lg:gap-8">
               <li className="px-3 py-1">
                 <Link
-                  href="/princing"
-                  className="flex items-center text-gray-700 transition hover:text-gray-900"
+                  href="/"
+                  className="flex items-center text-gray-700 transition hover:text-gray-900 font-semibold"
                 >
                   Home
                 </Link>
               </li>
               <li className="px-3 py-1">
                 <Link
-                  href="/customers"
-                  className="flex items-center text-gray-700 transition hover:text-gray-900"
+                  href="/aria"
+                  className="flex items-center text-gray-700 transition hover:text-gray-900 font-semibold"
                 >
-                  Contact
+                  ArIA
                 </Link>
               </li>
               <li className="px-3 py-1">
                 <Link
-                  href="/blog"
-                  className="flex items-center text-gray-700 transition hover:text-gray-900"
+                  href="/academy"
+                  className="flex items-center text-gray-700 transition hover:text-gray-900 font-semibold"
                 >
-                  Blog
+                  Arised Academy
                 </Link>
               </li>
               <li className="px-3 py-1">
                 <Link
-                  href="/documentation"
-                  className="flex items-center text-gray-700 transition hover:text-gray-900"
+                  href="https://www.project-noor.eu"
+                  className="flex items-center text-gray-700 transition hover:text-gray-900 font-semibold"
                 >
-                  Technology
+                  Project Noor
                 </Link>
-              </li>
-              {/* 1st level: hover */}
-              <Dropdown title="Solutions">
-                {/* 2nd level: hover */}
-                <li>
+                </li>
+                {/* 1st level: hover */}
+                <Dropdown title="Solutions">
+                  {/* 2nd level: hover */}
+                  <li>
                   <Link
                     href="/support"
                     className="flex rounded-lg px-2 py-1.5 text-sm text-gray-700 hover:bg-gray-100"

@@ -8,9 +8,9 @@ import WallOfLove from "@/components/wall-of-love";
 import Cta from "@/components/cta-alternative";
 import Header from "@/components/ui/header";
 import FeaturesAria from "@/components/features-aria";
-import UseCaseSection from "@/components/usecase";
-import HowItWorksSection from "@/components/howitworks";
-import WhoItsForSection from "@/components/whoitsfor";
+import UseCaseSection from "@/components/usecase_aria";
+import HowItWorksSection from "@/components/how-it-works-aria";
+import WhoItsForSection from "@/components/who_its_for_aria";
 
 export default function Customers() {
   return (

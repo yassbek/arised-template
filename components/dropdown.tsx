@@ -32,7 +32,7 @@ export default function Dropdown({ children, title }: DropdownProps) {
       onMouseEnter={() => setDropdownOpen(true)}
       onMouseLeave={() => setDropdownOpen(false)}
     >
-      <span className="flex cursor-pointer items-center text-gray-700 transition hover:text-gray-900">
+      <span className="flex cursor-pointer items-center text-gray-700 transition hover:text-gray-900 font-semibold">
         {title}
       </span>
       <button
