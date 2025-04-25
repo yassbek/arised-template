@@ -1,3 +1,4 @@
+// WhatItDoesSection.jsx
 "use client"
 
 import React from "react";
@@ -27,8 +28,11 @@ const features = [
 
 export default function WhatItDoesSection() {
   return (
-    <section className="bg-gray-50 py-24">
-      <div className="container mx-auto px-6 lg:px-8">
+    <section className="relative py-24">
+      {/* background gradient behind everything */}
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-50 to-white -z-10" />
+
+      <div className="relative z-10 container mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <motion.h2
             className="text-4xl sm:text-5xl font-extrabold text-slate-900"
@@ -49,7 +53,7 @@ export default function WhatItDoesSection() {
         </div>
 
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3">
-          {features.map(({ title, description, icon: Icon }, idx) => (
+          {features.map(({ title, description, icon: Icon }) => (
             <motion.div
               key={title}
               className="group relative flex flex-col items-start rounded-2xl bg-white/80 backdrop-blur-md p-8 ring-1 ring-transparent transition-all"
@@ -63,13 +67,9 @@ export default function WhatItDoesSection() {
               >
                 <Icon className="h-7 w-7" />
               </motion.div>
-              <h3 className="text-2xl font-bold text-slate-900">
-                {title}
-              </h3>
+              <h3 className="text-2xl font-bold text-slate-900">{title}</h3>
               <span className="block w-12 h-0.5 bg-blue-500 my-4" aria-hidden="true" />
-              <p className="text-slate-600 leading-relaxed">
-                {description}
-              </p>
+              <p className="text-slate-600 leading-relaxed">{description}</p>
             </motion.div>
           ))}
         </div>

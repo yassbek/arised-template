@@ -1,3 +1,4 @@
+// StartingPointSection.jsx
 "use client";
 import React from "react";
 import { FolderCheck, Sparkles } from "lucide-react";
@@ -34,10 +35,9 @@ export default function StartingPointSection({ onScrollToHowItWorks }: StartingP
   ];
 
   return (
-    <section className="relative bg-blue-50 py-28 overflow-hidden">
-      {/* ... background blobs omitted for brevity ... */}
-
-      <div className="relative max-w-6xl mx-auto px-6">
+    <section className="relative bg-gradient-to-b from-blue-200 to-blue-50 py-28">
+      {/* content */}
+      <div className="relative z-10 max-w-6xl mx-auto px-6">
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
@@ -47,8 +47,9 @@ export default function StartingPointSection({ onScrollToHowItWorks }: StartingP
           <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900">
             Get Started — Your Way
           </h2>
-          <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-            Arised Academy gives you the flexibility to train teams rapidly—pick ready-made content or customize everything to your exact needs.
+          <p className="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
+            Arised Academy gives you the flexibility to train teams rapidly—pick
+            ready-made content or customize everything to your exact needs.
           </p>
         </motion.div>
 
@@ -68,7 +69,7 @@ export default function StartingPointSection({ onScrollToHowItWorks }: StartingP
               <h3 className="text-2xl font-semibold text-gray-900 mb-2">{title}</h3>
               <p className="text-gray-600 leading-relaxed mb-4">{description}</p>
               <a
-                onClick={(e) => {
+                onClick={e => {
                   e.preventDefault();
                   link.action?.();
                 }}
@@ -80,6 +81,19 @@ export default function StartingPointSection({ onScrollToHowItWorks }: StartingP
           ))}
         </div>
       </div>
+
+      {/* bottom wave to blend into Roadmap */}
+      <svg
+        className="absolute bottom-0 left-0 w-full h-32"
+        viewBox="0 0 1440 320"
+        preserveAspectRatio="none"
+      >
+        <path
+          fill="#EFF6FF"
+          fillOpacity="1"
+          d="M0,160 C320,200 1120,120 1440,160 L1440,320 L0,320 Z"
+        />
+      </svg>
     </section>
-  );
+);
 }

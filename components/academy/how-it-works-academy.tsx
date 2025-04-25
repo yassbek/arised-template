@@ -1,4 +1,5 @@
-"use client"
+// RoadmapSection.jsx
+"use client";
 import React from "react";
 import { motion } from "framer-motion";
 
@@ -28,16 +29,12 @@ const steps = [
 export default function RoadmapSection() {
   return (
     <section className="relative py-32 overflow-hidden">
-      {/* Cool SVG background */}
+      {/* full-cover SVG gradient & shapes, starting at the wave color */}
       <div className="absolute inset-0 -z-10">
-        <svg
-          className="w-full h-full"
-          preserveAspectRatio="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <svg className="w-full h-full" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stopColor="#E0E7FF" />
+              <stop offset="0%" stopColor="#EFF6FF" />
               <stop offset="100%" stopColor="#FADADD" />
             </linearGradient>
           </defs>
@@ -47,9 +44,9 @@ export default function RoadmapSection() {
         </svg>
       </div>
 
-      <div className="max-w-4xl mx-auto px-6">
+      <div className="relative z-10 max-w-4xl mx-auto px-6">
         <motion.h2
-          className="text-5xl font-extrabold text-gray-900 text-center mb-6 relative"
+          className="text-5xl font-extrabold text-gray-900 text-center mb-6"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
@@ -66,7 +63,7 @@ export default function RoadmapSection() {
         </motion.p>
 
         <div className="relative">
-          {/* Central timeline spine */}
+          {/* timeline spine */}
           <div className="absolute left-1/2 top-0 transform -translate-x-1/2 h-full w-2 bg-gradient-to-b from-indigo-400 via-purple-400 to-pink-400 rounded-full opacity-80" />
 
           {steps.map((step, idx) => {
@@ -80,22 +77,15 @@ export default function RoadmapSection() {
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.3, duration: 0.7 }}
               >
-                {/* Content Card */}
                 <div
                   className={
                     `w-full sm:w-5/12 bg-white p-8 rounded-3xl shadow-2xl border-l-4 border-${step.accent}-500 ` +
-                    (isLeft ? 'mr-auto text-left' : 'ml-auto text-left')
+                    (isLeft ? "mr-auto text-left" : "ml-auto text-left")
                   }
                 >
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
-                    {step.title}
-                  </h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    {step.text}
-                  </p>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-3">{step.title}</h3>
+                  <p className="text-gray-700 leading-relaxed">{step.text}</p>
                 </div>
-
-                {/* Marker */}
                 <div className="absolute left-1/2 transform -translate-x-1/2 bg-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg border-4 border-gray-100">
                   <span className={`text-xl font-bold text-${step.accent}-500`}>{idx + 1}</span>
                 </div>

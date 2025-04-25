@@ -5,9 +5,9 @@ export const metadata = {
   
   import Hero from "./hero";
   import Cta from "@/components/cta-alternative";
-  import EcosystemSection from "@/components/arised_ecosystem";
-  import ValuesSection from "@/components/values";
-  import OurStory from "@/components/our_story";
+  import EcosystemSection from "@/components/aboutus/arised_ecosystem";
+  import ValuesSection from "@/components/aboutus/values";
+  import OurStory from "@/components/aboutus/our_story";
   
   export default function Home() {
     return (
