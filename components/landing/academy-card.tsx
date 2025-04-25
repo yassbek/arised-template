@@ -39,7 +39,7 @@ const steps = [
     accent: 'from-emerald-500 to-teal-400',
     features: ['Real-time feedback', 'Performance metrics'],
   },
-] as const;
+];
 
 // ────────────────────────────────────────────────────────────────────────────────
 // MAIN COMPONENT
@@ -128,7 +128,7 @@ function Header({ active }: { active: number }) {
       <div className="w-full mt-4 bg-white dark:bg-slate-800 rounded-xl p-6 shadow-md">
         {active === 0 && (
           <div className="grid grid-cols-3 gap-3">
-            {step.examples.map((item, i) => (
+            {(step as any).examples?.map((item: string, i: number) => (
               <div
                 key={i}
                 className="text-center py-3 px-2 bg-indigo-50 dark:bg-slate-700 rounded-lg border border-indigo-100 dark:border-slate-600 text-indigo-700 dark:text-indigo-300 font-medium"
@@ -140,7 +140,7 @@ function Header({ active }: { active: number }) {
         )}
         {active === 1 && (
           <div className="space-y-4">
-            {step.metrics.map((metric, i) => (
+            {(step as any).metrics?.map((metric: any, i: number) => (
               <div key={i} className="space-y-1">
                 <div className="flex justify-between items-center text-sm font-medium">
                   <span className="text-gray-700 dark:text-gray-300">
@@ -164,7 +164,7 @@ function Header({ active }: { active: number }) {
         )}
         {active === 2 && (
           <div className="grid grid-cols-2 gap-4">
-            {step.features.map((feature, i) => (
+            {(step as any).features?.map((feature: string, i: number) => (
               <div
                 key={i}
                 className="flex items-center space-x-2 p-3 bg-gradient-to-br from-emerald-50 to-teal-50 dark:from-emerald-900/20 dark:to-teal-900/20 rounded-lg border border-emerald-100 dark:border-emerald-800/30"
