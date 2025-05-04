@@ -96,7 +96,7 @@ export default function UseCaseSection() {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <img
-              src="/images/pharmacy-use-case.jpg"
+              src="/images/pharmacy-workflow.png"
               alt="ArIA automating a pharmacy order system"
               className="w-full h-[450px] object-cover"
             />

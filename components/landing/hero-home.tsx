@@ -15,7 +15,7 @@ export default function HeroHome() {
           <div className="text-center">
             {/* Logo */}
             <div
-              className="mb-6 border-y [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] py-6"
+              className="mb-6 border-b [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] py-6"
               data-aos="zoom-y-out"
             >
               <Image
@@ -29,7 +29,7 @@ export default function HeroHome() {
 
             {/* Headline */}
             <h1
-              className="mb-6 border-y text-5xl font-bold [border-image:linear-gradient(to_right,transparent,--theme(--color-slate-300/.8),transparent)1] md:text-6xl"
+              className="mb-6 text-5xl font-bold md:text-6xl"
               data-aos="zoom-y-out"
               data-aos-delay={150}
             >
