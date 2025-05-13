@@ -24,7 +24,7 @@ export default function Home() {
       <TestimonialsCarousel />
       <LandingPage /> 
       <CTA2
-            heading="Let's build something human together!"
+            heading="Transform Tasks into Insights"
             buttonText="Get a Quote"
             buttonLink="/contact"
         />      

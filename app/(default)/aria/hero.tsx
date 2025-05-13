@@ -30,18 +30,7 @@ export default function Hero() {
                 Learn How It Works
               </a>
             </div>
-            <div className="mt-12 aspect-w-16 aspect-h-9 w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-lg">
-            <div className="mt-12 aspect-video w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-lg border border-gray-200">
-            <iframe
-              src="https://www.dailymotion.com/embed/video/x15ejvc"
-              title="How ArIA Works"
-              allow="autoplay; fullscreen; clipboard-write; picture-in-picture"
-              allowFullScreen
-              className="w-full h-full"
-            />
-          </div>
-
-          </div>
+            
         </div>
       </div>
       </div>
