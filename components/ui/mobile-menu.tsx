@@ -89,38 +89,38 @@ export default function MobileMenu() {
           <ul className="p-2 text-sm">
             <li>
               <Link
-                href="/pricing"
+                href="/aria"
                 className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
                 onClick={() => setMobileNavOpen(false)}
               >
-                Pricing
+                ArIA
               </Link>
             </li>
             <li>
               <Link
-                href="/customers"
+                href="/academy"
                 className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
                 onClick={() => setMobileNavOpen(false)}
               >
-                Customers
+                Arised Academy
               </Link>
             </li>
             <li>
               <Link
-                href="/blog"
+                href="https://project-noor.eu"
                 className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
                 onClick={() => setMobileNavOpen(false)}
               >
-                Blog
+                Project Noor
               </Link>
             </li>
             <li>
               <Link
-                href="/documentation"
+                href="/aboutus"
                 className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
                 onClick={() => setMobileNavOpen(false)}
               >
-                Docs
+                About Us
               </Link>
             </li>
             <li>
@@ -134,11 +134,11 @@ export default function MobileMenu() {
             </li>
             <li>
               <Link
-                href="/apps"
+                href="/contact"
                 className="flex rounded-lg px-2 py-1.5 text-gray-700 hover:bg-gray-100"
                 onClick={() => setMobileNavOpen(false)}
               >
-                Apps
+                Contact
               </Link>
             </li>
           </ul>

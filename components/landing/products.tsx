@@ -14,14 +14,14 @@ import {
 export default function ProductsSection() {
   const products = [
     {
-      title: 'Aria',
-      desc: 'Link your legacy systems in seconds—no code required.',
+      title: 'ArIA',
+      desc: 'Automize your legacy systems to do the work that really matters.',
       icon: CloudCogIcon,
       gradient: 'from-blue-500 to-blue-400',
       href: '/aria',
     },
     {
-      title: 'Academy',
+      title: 'Arised Academy',
       desc: 'Train with our AI to elevate your professional interactions.',
       icon: MessageSquareTextIcon,
       gradient: 'from-indigo-500 to-indigo-400',
