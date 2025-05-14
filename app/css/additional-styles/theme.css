@@ -91,3 +91,43 @@ transition-property: transform, opacity;
       transform: translate3d(10px, 0, 0) scale(1.2);
   }
 }
+
+/* Inside your theme.css (or a dedicated _colors.css, _variables.css imported into it) */
+:root {
+  --arised-primary-blue: #2563EB;
+  --arised-primary-blue-dark: #1D4ED8;
+
+  --arised-accent-teal: #14B8A6;
+  --arised-accent-teal-light: #A7F3D0; /* Adjusted for better visibility if used as bg */
+
+  --arised-neutral-text: #1F2937;
+  --arised-neutral-text-secondary: #6B7280;
+  --arised-neutral-border: #D1D5DB;
+  --arised-neutral-bg-light: #F9FAFB;
+  --arised-neutral-bg-white: #FFFFFF;
+
+  /* You can also define font variables if not already done via @theme,
+     though your @theme block for fonts in the previous file is good! */
+  --font-primary: var(--font-inter, Inter, sans-serif); /* Using fallback from your @theme */
+  --font-mono: var(--font-mono, Roboto Mono, monospace);
+}
+
+/* Optional: Base body styling for default text and background */
+body {
+  color: var(--arised-neutral-text);
+  background-color: var(--arised-neutral-bg-white);
+  font-family: var(--font-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--arised-neutral-text); /* Or you could use --arised-primary-blue for specific heading levels */
+}
+
+a {
+  color: var(--arised-primary-blue);
+  text-decoration: none; /* Or your preferred link style */
+}
+a:hover {
+  color: var(--arised-primary-blue-dark);
+  text-decoration: underline;
+}

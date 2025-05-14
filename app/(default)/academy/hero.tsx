@@ -2,7 +2,8 @@ import PageIllustration from "@/components/page-illustration";
 
 export default function AcademyHeroSection() {
   return (
-    <section className="relative">
+    // MODIFIED: Added gradient to transition to gray-50 at the bottom
+    <section className="relative bg-gradient-to-b from-white to-gray-50">
       <PageIllustration />
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         {/* Main content */}

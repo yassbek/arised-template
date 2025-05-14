@@ -30,6 +30,7 @@ export default function WhatItDoesSection() {
   return (
     <section className="relative py-24">
       {/* background gradient behind everything */}
+      {/* This gradient starts from gray-50, which matches the end of the previous section */}
       <div className="absolute inset-0 bg-gradient-to-b from-gray-50 to-white -z-10" />
 
       <div className="relative z-10 container mx-auto px-6 lg:px-8">

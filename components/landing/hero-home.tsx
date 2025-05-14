@@ -59,9 +59,10 @@ export default function HeroHome() {
                     className="btn group mb-4 w-full bg-blue-600 text-white shadow-sm hover:bg-blue-700 sm:mb-0 sm:w-auto"
                     href="#how-it-works"
                   >
-                    <span className="relative inline-flex items-center">
+                    <span className="relative inline-flex items-center text-white ">
                       See Our Vision{" "}
-                      <span className="ml-1 tracking-normal text-blue-300 transition-transform group-hover:translate-x-0.5">
+                      {/* ARROW TEXT COLOR CHANGED TO WHITE HERE */}
+                      <span className="ml-1 tracking-normal text-white transition-transform group-hover:translate-x-0.5">
                         →
                       </span>
                     </span>
