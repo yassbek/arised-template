@@ -18,8 +18,9 @@ export default function Customers() {
       
       <Hero />
       <FeaturesAria />
-      <UseCaseSection />
+      
       <HowItWorksSection />
+      <UseCaseSection />
       <WhoItsForSection />
       
       

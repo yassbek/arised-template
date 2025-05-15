@@ -1,4 +1,5 @@
-"use client"
+// components/HowItWorksSection.jsx
+"use client";
 import React from "react";
 import { Search, Settings, Zap } from "lucide-react";
 import { motion } from "framer-motion";
@@ -21,95 +22,115 @@ const steps = [
   },
 ];
 
+// Consistent blue theme colors
+const themeBlue = {
+  main: "#2563EB",    // Tailwind blue-600
+  light: "#3B82F6",   // Tailwind blue-500
+  lighter: "#60A5FA", // Tailwind blue-400
+  dark: "#1D4ED8",    // Tailwind blue-700
+  bgLight: "#DBEAFE", // Tailwind blue-100
+  // For dark mode gradient end, let's use a standard Tailwind dark blue
+  // blue900: "#1E3A8A", // (actual Tailwind blue-900)
+};
+
 export default function HowItWorksSection() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-white to-blue-50 py-32">
-      {/* Subtle geometric background */}
+    <section className={`
+      relative overflow-hidden py-24 md:py-32
+      bg-[linear-gradient(to_bottom,theme(colors.slate.50)_0%,theme(colors.slate.50)_50%,theme(colors.blue.100)_100%)]
+      dark:bg-[linear-gradient(to_bottom,theme(colors.slate.900)_0%,theme(colors.slate.900)_50%,theme(colors.blue.900)_100%)]
+    `}>
+      {/* Subtle geometric background pattern */}
       <div className="absolute inset-0 -z-10">
         <svg
-          className="w-full h-full"
+          className="w-full h-full text-slate-300/70 dark:text-slate-700/50"
           preserveAspectRatio="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <defs>
-            <pattern id="smallGrid" width="20" height="20" patternUnits="userSpaceOnUse">
-              <path d="M20 0 L0 0 0 20" fill="none" stroke="rgba(203,213,225,0.3)" strokeWidth="1"/>
-            </pattern>
-            <pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse">
-              <rect width="100" height="100" fill="url(#smallGrid)"/>
-              <path d="M100 0 L0 0 0 100" fill="none" stroke="rgba(203,213,225,0.6)" strokeWidth="2"/>
+            <pattern id="howItWorksGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+              <path d="M30 0 L0 0 0 30" fill="none" stroke="currentColor" strokeWidth="0.5"/>
             </pattern>
           </defs>
-          <rect width="100%" height="100%" fill="url(#grid)" />
+          <rect width="100%" height="100%" fill="url(#howItWorksGrid)" />
         </svg>
       </div>
 
-      <div className="relative max-w-4xl mx-auto px-6">
-        {/* Header */}
+      <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          className="text-center mb-20"
-          initial={{ opacity: 0, y: 20 }}
+          className="text-center mb-16 md:mb-24"
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
         >
-          <h2 className="text-5xl font-extrabold text-gray-900">
-            How ArIA Works
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-800 dark:text-slate-100 mb-10"> {/* Keep original structural text colors or remove them */}
+            <span className="text-blue-600 dark:text-blue-400">How ArIA Works</span>
           </h2>
-          <p className="mt-4 text-lg text-gray-700 max-w-2xl mx-auto">
-            From insight to automation—here’s how we transform your workflow.
-          </p>
+          {/* MODIFIED: Wrapped p tag in a styled div to create a box */}
+          <div className="bg-white dark:bg-slate-800 rounded-2xl p-6 sm:p-8 shadow-xl max-w-3xl mx-auto">
+            <p className="text-lg text-gray-700 dark:text-slate-300 leading-relaxed text-left md:text-justify"> {/* MODIFIED: Adjusted classes on p tag */}
+              ArIA transforms your workflow by identifying manual, repetitive tasks and replacing them with intelligent automation.
+              It starts by analyzing how your teams interact with existing software to uncover inefficiencies. Then, using advanced
+              AI, ArIA learns to navigate and operate these systems just like a human—clicking through interfaces, entering data,
+              and executing tasks automatically. There’s no need to replace or modify your current software. Once deployed, ArIA
+              works reliably in the background, reducing errors, saving time, and allowing your teams to focus on higher-value
+              work.
+            </p>
+          </div>
         </motion.div>
 
-        {/* Timeline */}
         <div className="relative">
-          {/* Central gradient spine */}
-          <div className="absolute left-1/2 top-0 h-full w-1 bg-gradient-to-b from-blue-300 to-indigo-300 transform -translate-x-1/2" />
-
-          {/* Steps */}
-          <div className="space-y-24">
+          <div className="hidden lg:block absolute left-1/2 top-0 h-full w-1.5 bg-gradient-to-b from-blue-400 via-blue-500 to-blue-600 transform -translate-x-1/2 rounded-full" />
+          <div className="space-y-16 lg:space-y-0">
             {steps.map((step, idx) => {
-              const isLeft = idx % 2 === 0;
+              const isLeftAlignedOnDesktop = idx % 2 === 0;
               const Icon = step.icon;
+
               return (
                 <motion.div
                   key={step.title}
-                  className={`
-                    relative flex items-center
-                    ${isLeft ? "justify-start pl-32 text-left" : "justify-end pr-32 text-right"}
-                  `}
-                  initial={{ opacity: 0, x: isLeft ? -100 : 100 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: idx * 0.2 }}
+                  className={`w-full lg:relative lg:flex items-center ${isLeftAlignedOnDesktop ? 'lg:justify-start' : 'lg:justify-end'} lg:mb-24 last:lg:mb-0`}
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true, amount: 0.1 }}
+                  transition={{ duration: 0.4, delay: idx * 0.1 }}
                 >
-                  {/* Icon badge */}
                   <motion.div
-                    className="absolute left-1/2 top-4 transform -translate-x-1/2"
+                    className="relative lg:absolute lg:left-1/2 lg:top-1/2 lg:-translate-x-1/2 lg:-translate-y-1/2 mx-auto lg:mx-0 mb-6 lg:mb-0 z-10"
                     initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
-                    transition={{ type: "spring", stiffness: 260, damping: 20, delay: 0.3 + idx * 0.2 }}
+                    whileInView={{ scale: 1 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                    transition={{ type: "spring", stiffness: 220, damping: 18, delay: 0.2 + idx * 0.15 }}
                   >
                     <motion.div
-                      whileHover={{ scale: 1.2, rotate: 10 }}
-                      className="w-20 h-20 bg-gradient-to-br from-blue-600 to-indigo-600 text-white rounded-full flex items-center justify-center shadow-2xl ring-4 ring-white"
+                      whileHover={{ scale: 1.15, rotate: 6 }}
+                      className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-blue-500 to-blue-700 text-white rounded-full flex items-center justify-center shadow-xl ring-4 ring-slate-50 dark:ring-slate-800"
                     >
-                      <Icon className="w-10 h-10" />
+                      <Icon className="w-8 h-8 md:w-10 md:h-10" />
                     </motion.div>
                   </motion.div>
 
-                  {/* Content block with expanded spacing */}
-                  <div className={`
-                    w-1/3
-                    ${isLeft ? "sm:mr-48" : "sm:ml-48"}
-                  `}> 
-                    <h3 className="text-2xl font-semibold text-gray-900 mb-2">
-                      {step.title}
-                    </h3>
-                    <p className="text-gray-700 leading-relaxed">
-                      {step.text}
-                    </p>
-                  </div>
+                  <motion.div
+                    className={`
+                      w-full max-w-md lg:max-w-none lg:w-[calc(50%-4rem)]
+                      bg-white dark:bg-slate-800 rounded-2xl p-6 md:p-8 shadow-xl 
+                      hover:shadow-2xl transition-shadow duration-300
+                    `}
+                    initial={{ opacity: 0, x: isLeftAlignedOnDesktop ? -40 : 40, y: 10 }}
+                    whileInView={{ opacity: 1, x: 0, y: 0 }}
+                    viewport={{ once: true, amount: 0.2 }}
+                    transition={{ duration: 0.5, delay: 0.1 + idx * 0.15, ease: "easeOut" }}
+                  >
+                    <div className={`text-center ${isLeftAlignedOnDesktop ? 'lg:text-left' : 'lg:text-right'}`}>
+                      <h3 className="text-xl md:text-2xl font-semibold text-gray-800 dark:text-slate-100 mb-3">
+                        {step.title}
+                      </h3>
+                      <p className="text-gray-600 dark:text-slate-300 leading-relaxed text-sm md:text-base">
+                        {step.text}
+                      </p>
+                    </div>
+                  </motion.div>
                 </motion.div>
               );
             })}

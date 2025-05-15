@@ -41,7 +41,7 @@ export default function WhatItDoesSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            What Arised Academy Does
+            Unlock Real-World Communication Skills with AI-Powered Training
           </motion.h2>
           <motion.p
             className="mt-4 text-lg text-slate-600 max-w-2xl mx-auto"
@@ -49,7 +49,7 @@ export default function WhatItDoesSection() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            Our AI-powered training platform helps your teams master communication — across any role, industry, or scenario.
+            From sales calls to crisis management—equip your teams to handle any conversation with confidence and clarity.
           </motion.p>
         </div>
 
