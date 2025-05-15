@@ -33,7 +33,7 @@ const personas = [
 ];
 
 export default function WhoItsForSection() {
-  const getAccentClasses = (accentName) => {
+  const getAccentClasses = (accentName: string) => { // Add ': string' type annotation
     if (accentName === 'teal') {
       return {
         textLight: 'text-arised-accent-teal-light',

@@ -121,10 +121,10 @@ export default function PlatformFeaturesSection() {
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
-          {features.map(({ icon: Icon, title, description, accent }, idx) => {
-            // The 'accent' prop from the features array is now effectively ignored for styling purposes here,
-            // as getFeatureAccentClasses always returns blue theme classes.
-            const accentClasses = getFeatureAccentClasses(accent);
+        {features.map(({ icon: Icon, title, description /* accent is destructured but no longer needed here */ }, idx) => {
+          // The 'accent' prop from the features array is now effectively ignored for styling purposes here,
+           // as getFeatureAccentClasses always returns blue theme classes.
+           const accentClasses = getFeatureAccentClasses(); // Call with no arguments
             return (
               <motion.div
                 key={title}

@@ -34,7 +34,7 @@ export default function StartingPointSection({ onScrollToHowItWorks }: StartingP
     },
   ];
 
-  const getOptionAccentClasses = (accentName) => {
+  const getOptionAccentClasses = (accentName: string) => { // Add ': string' type annotation
     return {
       cardBg: `bg-${accentName}-50`,
       borderMain: `border-${accentName}-500`,

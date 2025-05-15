@@ -1,6 +1,7 @@
 // components/FeaturesSection.jsx
 "use client";
-import React from "react";
+
+import React from "react"; // Ensure React is imported for CSSProperties
 import { CloudLightning as LightningBolt, Monitor, ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -11,8 +12,8 @@ const features = [
     description:
       "ArIA reads visual layouts and UI elements just like a human—no structured data or APIs needed.",
     themeColors: { // Blue Theme
-      main: "#2563EB",     // Tailwind blue-600 (example)
-      bgLight: "#DBEAFE",  // Tailwind blue-100 (example)
+      main: "#2563EB",    // Tailwind blue-600 (example)
+      bgLight: "#DBEAFE", // Tailwind blue-100 (example)
     },
   },
   {
@@ -21,8 +22,8 @@ const features = [
     description:
       "From form-filling to file handling, ArIA completes processes with logic, memory, and reasoning.",
     themeColors: { // Changed to Blue Theme
-      main: "#2563EB",     // Tailwind blue-600 (example)
-      bgLight: "#DBEAFE",  // Tailwind blue-100 (example)
+      main: "#2563EB",    // Tailwind blue-600 (example)
+      bgLight: "#DBEAFE", // Tailwind blue-100 (example)
     },
   },
   {
@@ -31,8 +32,8 @@ const features = [
     description:
       "Deploy once and automate across teams and tools—ArIA adapts with minimal config and complete transparency.",
     themeColors: { // Changed to Blue Theme
-      main: "#2563EB",     // Tailwind blue-600 (example)
-      bgLight: "#DBEAFE",  // Tailwind blue-100 (example)
+      main: "#2563EB",    // Tailwind blue-600 (example)
+      bgLight: "#DBEAFE", // Tailwind blue-100 (example)
     },
   },
 ];
@@ -77,7 +78,7 @@ export default function FeaturesSection() {
               style={{
                 '--card-main-color': themeColors.main,
                 '--card-bg-light': themeColors.bgLight,
-              }}
+              } as React.CSSProperties} // Applied type assertion here
               initial={{ opacity: 0, y: 50, scale: 0.95 }}
               whileInView={{ opacity: 1, y: 0, scale: 1 }}
               viewport={{ once: true, amount: 0.2 }}
